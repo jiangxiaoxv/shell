@@ -17,8 +17,10 @@ echo "let's see who's login into the system: `whoami`"
 
 # linux , shell变量的替换引用
 # shell 一大特性，就是可以从命令的执行结果中，再提取结果，因此特别适合便携脚本
-  # $()
+  # $() 在括号中执行命令，且拿到执行命令的结果
   # `` 反引号
 
 
-
+var="贵州茅台酒"
+echo $(echo ${var})
+echo `echo ${var}`
